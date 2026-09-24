@@ -1,0 +1,13 @@
+* text=auto eol=lf
+*.sh text eol=lf
+gradlew text eol=lf
+*.bat text eol=crlf
+
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.webp binary
+*.jar binary
+*.gguf binary
+*.usearch binary
+*.db binary

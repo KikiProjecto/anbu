@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+      ZERO <uses-permission> BY DESIGN.
+      No INTERNET, no ACCESS_NETWORK_STATE: inference is air-gapped at runtime.
+      Model files live in getExternalFilesDir() (app-scoped, no permission needed).
+      If you later add a one-time model download, gate it behind a productFlavor
+      and add android.permission.INTERNET only to that flavor's manifest.
+    -->
+
+    <application
+        android:name=".AnbuApplication"
+        android:allowBackup="false"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:extractNativeLibs="true"
+        android:fullBackupContent="false"
+        android:hasFragileUserData="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Anbu">
+
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="orientation|screenSize|screenLayout|keyboardHidden|uiMode"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:theme="@style/Theme.Anbu">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

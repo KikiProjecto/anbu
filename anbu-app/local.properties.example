@@ -1,0 +1,4 @@
+# Copy to local.properties and point at your SDK. Never commit local.properties.
+sdk.dir=/home/kiki/Android/Sdk
+# CMake is picked up from $sdk.dir/cmake, or override:
+# cmake.dir=/usr
