@@ -14,7 +14,6 @@ obj/
 *.dex
 *.class
 *.hprof
-
 local.properties
 local.defaults.properties
 gradle.properties.bak
@@ -34,7 +33,6 @@ signing/
 *.der
 *.key
 *.crt
-
 *.gguf
 *.safetensors
 *.onnx
